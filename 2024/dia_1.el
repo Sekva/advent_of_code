@@ -25,10 +25,10 @@
 (apply '+
        (mapcar 'abs
                (seq-mapn '-
-                         (sort (extrair_n_esima_coluna "inputs/1_1.txt" 1) 'math-lessp)
-                         (sort (extrair_n_esima_coluna "inputs/1_1.txt" 2) 'math-lessp))))
+                         (sort (extrair_n_esima_coluna "inputs/dia_01_input_01.txt" 1) 'math-lessp)
+                         (sort (extrair_n_esima_coluna "inputs/dia_01_input_01.txt" 2) 'math-lessp))))
 
 ;; Parte 2
-(let* ((primeira_lista (extrair_n_esima_coluna "inputs/1_1.txt" 1))
-       (segunda_lista (extrair_n_esima_coluna "inputs/1_1.txt" 2)))
+(let* ((primeira_lista (extrair_n_esima_coluna "inputs/dia_01_input_01.txt" 1))
+       (segunda_lista (extrair_n_esima_coluna "inputs/dia_01_input_01.txt" 2)))
   (apply '+(mapcar (lambda (el) (funcall 'pegar_score el segunda_lista)) primeira_lista)))
