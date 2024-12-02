@@ -1,1 +1,11 @@
 #+TITLE: Advent of code dos anos por eu
+#+SUBTITLE: Meus inputs não estão inclusos
+
+* 2024
++ [[file:2024/dia_1.el][Dia 1]]
+
+* 2023
+(Eu já fiz mas não subi, vo procurar)
+
+* 2022
+(Acho que esse ano eu fiz alguns só)
