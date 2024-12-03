@@ -3,6 +3,8 @@
 
 * 2024
 + [[file:2024/dia_1.el][Dia 1]]
++ [[file:2024/dia_2.el][Dia 2]]
++ [[file:2024/dia_3.el][Dia 3]]
 
 * 2023
 (Eu já fiz mas não subi, vo procurar)

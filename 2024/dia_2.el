@@ -1,4 +1,4 @@
-f(defun extrair_linhas_como_lista (filename)
+(defun extrair_linhas_como_lista (filename)
   (with-temp-buffer
     (insert-file-contents filename)
     (let (result)
@@ -51,6 +51,7 @@ f(defun extrair_linhas_como_lista (filename)
 (defun seguro_parte1 (relatorio)
   (and (eh_monotonico relatorio)
        (dentro_do_invervalo relatorio)))
+
 (length (-filter 'seguro_parte1 (extrair_linhas_como_lista "inputs/dia_02_input_01.txt")))
 
 ;; Parte 2
@@ -59,4 +60,5 @@ f(defun extrair_linhas_como_lista (filename)
     (dotimes (i (length relatorio))
       (setq seguro (or seguro (seguro_parte1 (pop_nesimo i relatorio)))))
     seguro))
+
 (length (-filter 'seguro_parte2 (extrair_linhas_como_lista "inputs/dia_02_input_01.txt")))
